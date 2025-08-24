@@ -1,0 +1,11 @@
+{
+  "domain": "chile_swissknife",
+  "name": "Chile Swissknife",
+  "documentation": "https://github.com/dubov90/chile-swissknife",
+  "dependencies": [],
+  "codeowners": ["@dubov90"],
+  "requirements": ["aiohttp>=3.8.0", "xmltodict>=0.13.0"],
+  "iot_class": "cloud_polling",
+  "version": "1.0.0",
+  "config_flow": true
+}
