@@ -1,0 +1,15 @@
+{
+  "title": "Chile Swissknife",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Chile Swissknife Configuration",
+        "description": "Set up your Chile Swissknife integration",
+        "data": {
+          "bus_stops": "Bus Stop IDs (comma separated)",
+          "update_interval": "Update interval (minutes)"
+        }
+      }
+    }
+  }
+}
