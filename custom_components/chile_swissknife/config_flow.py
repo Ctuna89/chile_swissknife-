@@ -13,7 +13,6 @@ class ChileSwissknifeConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     """Handle a config flow for Chile Swissknife."""
 
     VERSION = 1
-    CONNECTION_CLASS = config_entries.CONN_CLASS_CLOUD_POLL
 
     async def async_step_user(self, user_input=None):
         """Handle the initial step."""
@@ -45,13 +44,13 @@ class ChileSwissknifeConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     @callback
     def async_get_options_flow(config_entry):
         """Get the options flow for this handler."""
-        return ChileSwissknifeOptionsFlow(config_entry)
+        return ChileSwissknifeOptionsFlowHandler(config_entry)
 
 
-class ChileSwissknifeOptionsFlow(config_entries.OptionsFlow):
+class ChileSwissknifeOptionsFlowHandler(config_entries.OptionsFlow):
     """Handle options flow for Chile Swissknife."""
 
-    def __init__(self, config_entry):
+    def __init__(self, config_entry: config_entries.ConfigEntry) -> None:
         """Initialize options flow."""
         self.config_entry = config_entry
 
