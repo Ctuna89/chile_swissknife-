@@ -1,0 +1,22 @@
+{
+  "title": "Navaja Suiza Chilena",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configuración de Navaja Suiza Chilena",
+        "description": "Configura tu integración Navaja Suiza Chilena",
+        "data": {
+          "bus_stops": "IDs de paradas de bus (separados por comas)",
+          "update_interval": "Intervalo de actualización (minutos)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "La integración ya está configurada"
+    },
+    "error": {
+      "invalid_bus_stop": "Formato de parada de bus inválido",
+      "invalid_interval": "El intervalo de actualización debe estar entre 1 y 60 minutos"
+    }
+  }
+}
