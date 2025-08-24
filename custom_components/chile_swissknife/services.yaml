@@ -1,0 +1,6 @@
+show_earthquake_map:
+  description: Show the latest earthquake on a map
+  fields:
+    earthquake_data:
+      description: Earthquake data to display
+      example: '{"latitude": -33.45, "longitude": -70.67, "magnitude": 5.2}'
